@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="440" viewBox="0 0 1160 440" role="img" aria-labelledby="title description">
+  <title id="title">Decreasing 2: n prints, then one smaller call</title>
+  <desc id="description">Input n = 4. Each positive call prints n times and makes one call with n - 1. Sizes 4, 3, 2, 1, 0; print counts 4, 3, 2, 1, 0. Prints: 4 + 3 + 2 + 1 = 10. Total calls: 5.</desc>
+
+  <style>
+    text { font-family: Arial, sans-serif; fill: #1f2937; }
+    .title { font-size: 26px; font-weight: 600; }
+    .subtitle { font-size: 18px; }
+    .depth { font-size: 17px; fill: #475569; }
+    .node { fill: #eff6ff; stroke: #64748b; stroke-width: 2; }
+    .base { fill: #f1f5f9; stroke: #64748b; stroke-width: 2; }
+    .size { font-size: 20px; font-weight: 600; text-anchor: middle; }
+    .local { font-size: 17px; text-anchor: middle; }
+    .edge { stroke: #64748b; stroke-width: 2; marker-end: url(#arrow); }
+    .summary { font-size: 20px; }
+    .note { font-size: 17px; fill: #475569; }
+    .level { font-size: 18px; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="1160" height="440" fill="#ffffff"/>
+  <text class="title" x="36" y="38">Decreasing 2: n prints, then one smaller call</text>
+  <text class="subtitle" x="36" y="70">Input n = 4. Each positive call prints n times and makes one call with n - 1.</text>
+  <line class="edge" x1="205" y1="168" x2="264" y2="168"/>
+  <line class="edge" x1="425" y1="168" x2="484" y2="168"/>
+  <line class="edge" x1="645" y1="168" x2="704" y2="168"/>
+  <line class="edge" x1="865" y1="168" x2="924" y2="168"/>
+  <text class="depth" x="130" y="110" text-anchor="middle">depth 0</text>
+  <rect class="node" x="55" y="132" width="150" height="72" rx="7"/>
+  <text class="size" x="130" y="161">n = 4</text>
+  <text class="local" x="130" y="190">4 prints</text>
+  <text class="depth" x="350" y="110" text-anchor="middle">depth 1</text>
+  <rect class="node" x="275" y="132" width="150" height="72" rx="7"/>
+  <text class="size" x="350" y="161">n = 3</text>
+  <text class="local" x="350" y="190">3 prints</text>
+  <text class="depth" x="570" y="110" text-anchor="middle">depth 2</text>
+  <rect class="node" x="495" y="132" width="150" height="72" rx="7"/>
+  <text class="size" x="570" y="161">n = 2</text>
+  <text class="local" x="570" y="190">2 prints</text>
+  <text class="depth" x="790" y="110" text-anchor="middle">depth 3</text>
+  <rect class="node" x="715" y="132" width="150" height="72" rx="7"/>
+  <text class="size" x="790" y="161">n = 1</text>
+  <text class="local" x="790" y="190">1 print</text>
+  <text class="depth" x="1010" y="110" text-anchor="middle">depth 4</text>
+  <rect class="base" x="935" y="132" width="150" height="72" rx="7"/>
+  <text class="size" x="1010" y="161">n = 0</text>
+  <text class="local" x="1010" y="190">base: 0 prints</text>
+  <text class="summary" x="36" y="267">Prints: 4 + 3 + 2 + 1 = 10. Total calls: 5.</text>
+  <text class="subtitle" x="36" y="304">The chain has one call per depth, and its local print count decreases with n.</text>
+  <text class="note" x="36" y="366">Work labels count only println calls.</text>
+  <text class="note" x="36" y="392">The base case prints nothing but still takes Θ(1) time.</text>
+  <text class="note" x="36" y="418">Root depth 0; sample height 4. Each arrow is one recursive call.</text>
+</svg>

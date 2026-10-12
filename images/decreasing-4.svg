@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="680" viewBox="0 0 1320 680" role="img" aria-labelledby="title description">
+  <title id="title">Decreasing 4: one print, then two smaller calls</title>
+  <desc id="description">Input n = 3. Every positive call prints once and creates two children of size n - 1. Four levels have sizes 3, 2, 1, 0 and call counts 1, 2, 4, 8. Prints: 1 + 2 + 4 = 7. Total calls: 1 + 2 + 4 + 8 = 15.</desc>
+
+  <style>
+    text { font-family: Arial, sans-serif; fill: #1f2937; }
+    .title { font-size: 26px; font-weight: 600; }
+    .subtitle { font-size: 18px; }
+    .depth { font-size: 17px; fill: #475569; }
+    .node { fill: #eff6ff; stroke: #64748b; stroke-width: 2; }
+    .base { fill: #f1f5f9; stroke: #64748b; stroke-width: 2; }
+    .size { font-size: 20px; font-weight: 600; text-anchor: middle; }
+    .local { font-size: 17px; text-anchor: middle; }
+    .edge { stroke: #64748b; stroke-width: 2; marker-end: url(#arrow); }
+    .summary { font-size: 20px; }
+    .note { font-size: 17px; fill: #475569; }
+    .level { font-size: 18px; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="1320" height="680" fill="#ffffff"/>
+  <text class="title" x="36" y="38">Decreasing 4: one print, then two smaller calls</text>
+  <text class="subtitle" x="36" y="70">Input n = 3. Every positive call prints once and creates two children of size n - 1.</text>
+  <line class="edge" x1="512" y1="176" x2="256" y2="216"/>
+  <line class="edge" x1="512" y1="176" x2="768" y2="216"/>
+  <line class="edge" x1="256" y1="286" x2="128" y2="326"/>
+  <line class="edge" x1="256" y1="286" x2="384" y2="326"/>
+  <line class="edge" x1="768" y1="286" x2="640" y2="326"/>
+  <line class="edge" x1="768" y1="286" x2="896" y2="326"/>
+  <line class="edge" x1="128" y1="396" x2="64" y2="436"/>
+  <line class="edge" x1="128" y1="396" x2="192" y2="436"/>
+  <line class="edge" x1="384" y1="396" x2="320" y2="436"/>
+  <line class="edge" x1="384" y1="396" x2="448" y2="436"/>
+  <line class="edge" x1="640" y1="396" x2="576" y2="436"/>
+  <line class="edge" x1="640" y1="396" x2="704" y2="436"/>
+  <line class="edge" x1="896" y1="396" x2="832" y2="436"/>
+  <line class="edge" x1="896" y1="396" x2="960" y2="436"/>
+  <rect class="node" x="449" y="110" width="126" height="66" rx="7"/>
+  <text class="size" x="512" y="136">n = 3</text>
+  <text class="local" x="512" y="161">1 print</text>
+  <rect class="node" x="193" y="220" width="126" height="66" rx="7"/>
+  <text class="size" x="256" y="246">n = 2</text>
+  <text class="local" x="256" y="271">1 print</text>
+  <rect class="node" x="705" y="220" width="126" height="66" rx="7"/>
+  <text class="size" x="768" y="246">n = 2</text>
+  <text class="local" x="768" y="271">1 print</text>
+  <rect class="node" x="65" y="330" width="126" height="66" rx="7"/>
+  <text class="size" x="128" y="356">n = 1</text>
+  <text class="local" x="128" y="381">1 print</text>
+  <rect class="node" x="321" y="330" width="126" height="66" rx="7"/>
+  <text class="size" x="384" y="356">n = 1</text>
+  <text class="local" x="384" y="381">1 print</text>
+  <rect class="node" x="577" y="330" width="126" height="66" rx="7"/>
+  <text class="size" x="640" y="356">n = 1</text>
+  <text class="local" x="640" y="381">1 print</text>
+  <rect class="node" x="833" y="330" width="126" height="66" rx="7"/>
+  <text class="size" x="896" y="356">n = 1</text>
+  <text class="local" x="896" y="381">1 print</text>
+  <rect class="base" x="12" y="440" width="104" height="66" rx="7"/>
+  <text class="size" x="64" y="466">n = 0</text>
+  <text class="local" x="64" y="491">base: 0</text>
+  <rect class="base" x="140" y="440" width="104" height="66" rx="7"/>
+  <text class="size" x="192" y="466">n = 0</text>
+  <text class="local" x="192" y="491">base: 0</text>
+  <rect class="base" x="268" y="440" width="104" height="66" rx="7"/>
+  <text class="size" x="320" y="466">n = 0</text>
+  <text class="local" x="320" y="491">base: 0</text>
+  <rect class="base" x="396" y="440" width="104" height="66" rx="7"/>
+  <text class="size" x="448" y="466">n = 0</text>
+  <text class="local" x="448" y="491">base: 0</text>
+  <rect class="base" x="524" y="440" width="104" height="66" rx="7"/>
+  <text class="size" x="576" y="466">n = 0</text>
+  <text class="local" x="576" y="491">base: 0</text>
+  <rect class="base" x="652" y="440" width="104" height="66" rx="7"/>
+  <text class="size" x="704" y="466">n = 0</text>
+  <text class="local" x="704" y="491">base: 0</text>
+  <rect class="base" x="780" y="440" width="104" height="66" rx="7"/>
+  <text class="size" x="832" y="466">n = 0</text>
+  <text class="local" x="832" y="491">base: 0</text>
+  <rect class="base" x="908" y="440" width="104" height="66" rx="7"/>
+  <text class="size" x="960" y="466">n = 0</text>
+  <text class="local" x="960" y="491">base: 0</text>
+  <text class="depth" x="1080" y="119">depth 0</text>
+  <text class="level" x="1080" y="145">1 call, size 3</text>
+  <text class="level" x="1080" y="171">level prints: 1</text>
+  <text class="depth" x="1080" y="229">depth 1</text>
+  <text class="level" x="1080" y="255">2 calls, size 2</text>
+  <text class="level" x="1080" y="281">level prints: 2</text>
+  <text class="depth" x="1080" y="339">depth 2</text>
+  <text class="level" x="1080" y="365">4 calls, size 1</text>
+  <text class="level" x="1080" y="391">level prints: 4</text>
+  <text class="depth" x="1080" y="449">depth 3</text>
+  <text class="level" x="1080" y="475">8 calls, size 0</text>
+  <text class="level" x="1080" y="501">level prints: 0</text>
+  <text class="summary" x="36" y="553">Prints: 1 + 2 + 4 = 7. Total calls: 1 + 2 + 4 + 8 = 15.</text>
+  <text class="subtitle" x="36" y="590">The number of calls doubles each level. The last level contains eight base calls.</text>
+  <text class="note" x="36" y="626">Work labels count only println calls. Base calls print nothing but still take Θ(1) time.</text>
+  <text class="note" x="36" y="654">Root depth 0; sample height 3. Each arrow is one recursive call.</text>
+</svg>
